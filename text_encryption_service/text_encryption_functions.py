@@ -117,5 +117,7 @@ def encrypt_K(K) -> str:
 
     return KE
 
-res = encrypt_K(text_cryptography_helpers.key)
-print(res)
+# res = encrypt_K(text_cryptography_helpers.key)
+# print(res)
+
+# STEP 7  - return R and KE 
