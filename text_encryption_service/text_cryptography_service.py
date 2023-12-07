@@ -51,10 +51,7 @@ part3_of_3 = file_processor.plaintext_string[(2 * len(file_processor.plaintext_s
 # print("KE: ", res[1])
 
 # to do: 
-# - finish incorporating Tanmayi's functionality into the text_encryption_functions.py
-# - add a text_encryption method in the text_cryptography_service which implements the functions 
-# - try breaking up a large chunk of text into parts and running the functions concurrently
-
+# - decryption
 
 t1 = Thread(target=DNA_text_encryption, args=[part1_of_3, text_cryptography_helpers.key])
 t2 = Thread(target=DNA_text_encryption, args=[part2_of_3, text_cryptography_helpers.key])
