@@ -15,8 +15,7 @@ import file_processor
 
 # make sure this runs synchronously
 def DNA_text_encryption(plaintext, key) -> tuple[str, str]:
-    print('ayy')
-    
+
     # STEP 2
     encoded_plaintext = text_encryption_functions.convert_plaintext_to_8bit(plaintext)
     
