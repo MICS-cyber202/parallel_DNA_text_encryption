@@ -15,6 +15,7 @@ import file_processor
 
 # make sure this runs synchronously
 def DNA_text_encryption(plaintext, key) -> tuple[str, str]:
+    print('ayy')
     
     # STEP 2
     encoded_plaintext = text_encryption_functions.convert_plaintext_to_8bit(plaintext)
@@ -31,28 +32,34 @@ def DNA_text_encryption(plaintext, key) -> tuple[str, str]:
     # STEP 6
     KE = text_encryption_functions.encrypt_K(key)
 
-    # print('R: ', R)
-    # print('KE: ', KE)
+    print('R: ', R)
+    print('KE: ', KE)
     return [R, KE]
 
 
-res = DNA_text_encryption(file_processor.plaintext_string, text_cryptography_helpers.key)   
-print("R: ", res[0])
-print("KE: ", res[1])
+print(len(file_processor.plaintext_string))
+part1_of_3 = file_processor.plaintext_string[:len(file_processor.plaintext_string) // 3]
+part2_of_3 = file_processor.plaintext_string[len(file_processor.plaintext_string) // 3:(2 * len(file_processor.plaintext_string) // 3)]
+part3_of_3 = file_processor.plaintext_string[(2 * len(file_processor.plaintext_string) // 3):]
+# print(part1_of_3)
+# print(part2_of_3)
+# print(part3_of_3)
+# 27854 / 5 = 5570 mod 4
+
+# res = DNA_text_encryption(file_processor.plaintext_string, text_cryptography_helpers.key)   
+# print("R: ", res[0])
+# print("KE: ", res[1])
 
 # to do: 
 # - finish incorporating Tanmayi's functionality into the text_encryption_functions.py
 # - add a text_encryption method in the text_cryptography_service which implements the functions 
 # - try breaking up a large chunk of text into parts and running the functions concurrently
 
-# def text_cryptography_service():
-#     time.sleep(5)
-#     print("completed text crytography")
 
-# t1 = Thread(target=text_cryptography_service)
-# t2 = Thread(target=text_cryptography_service)
-# t3 = Thread(target=text_cryptography_service)
+t1 = Thread(target=DNA_text_encryption, args=[part1_of_3, text_cryptography_helpers.key])
+t2 = Thread(target=DNA_text_encryption, args=[part2_of_3, text_cryptography_helpers.key])
+t3 = Thread(target=DNA_text_encryption, args=[part3_of_3, text_cryptography_helpers.key])
 
-# t1.start()
-# t2.start()
-# t3.start()
+t1.start()
+t2.start()
+t3.start()
