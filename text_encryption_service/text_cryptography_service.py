@@ -3,10 +3,15 @@ File: text_encryption_service.py
 Description: The text encryption service
 '''
 
+import sys
 import time
 from threading import Thread
 import text_cryptography_helpers
 import text_encryption_functions
+import file_processor
+
+# get the transcript file loaded as a string
+# sys.path.insert(1, '../file_processor')
 
 # make sure this runs synchronously
 def DNA_text_encryption(plaintext, key) -> tuple[str, str]:
@@ -31,7 +36,7 @@ def DNA_text_encryption(plaintext, key) -> tuple[str, str]:
     return [R, KE]
 
 
-res = DNA_text_encryption(text_cryptography_helpers.plaintext, text_cryptography_helpers.key)   
+res = DNA_text_encryption(file_processor.plaintext_string, text_cryptography_helpers.key)   
 print("R: ", res[0])
 print("KE: ", res[1])
 
