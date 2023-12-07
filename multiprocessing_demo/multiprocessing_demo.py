@@ -27,3 +27,4 @@ if __name__ == '__main__':
     process3.start()
     process3.join()
 
+print("CPU count: ", os.cpu_count())
