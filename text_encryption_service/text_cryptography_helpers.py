@@ -1,4 +1,6 @@
+plaintext = '[00:00:03.930] - Speaker 1 Okay. Perfect. Hi there. Welcome to our interview with Ranjiv Bhair. Im Tanmayi Nandan and I have with me my classmates, Varoon Bashyakarla and Samuel Berston.'
 
+key = 'ACTGACTGA'
 
 dna_dict = {'A':'00','T':'01','C':'10','G':'11'}
 
