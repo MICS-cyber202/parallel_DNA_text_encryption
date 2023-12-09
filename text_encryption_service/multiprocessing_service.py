@@ -41,7 +41,11 @@ def load_processes(encryption_algorithm: Callable[[str, str], str], plaintext_ch
         encryption_processes.append(Process(target=encryption_algorithm, args=(plaintext_chunks[i], key,)))
     return encryption_processes
 
-
+# run_processes takes the loaded encryption_processes and runs them all concurrently
+# figure out the best place to collect performance metrics and write them to the CSV
+# the function does not return anything 
+def run_processes(encryption_processes: list[Process]) -> None:
+    return
 
 # print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
 
