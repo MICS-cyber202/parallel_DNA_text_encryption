@@ -52,6 +52,7 @@ def run_processes(encryption_processes: list[Process]) -> None:
         runnable.start()
     return
 
+# check chunk_plaintext method works
 # print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
 
 def dummy_method(arg1: str, arg2: str) -> str:
@@ -59,6 +60,7 @@ def dummy_method(arg1: str, arg2: str) -> str:
     print("dummy")
     return "dummy"
 
+# check load_process method works
 # print(load_processes(dummy_method, ["aaa", "aaa", "aaa", "aaa", "aaa"], "abcde", 5))
 
 dummy_process1 = Process(target=dummy_method, args=("foo","bar",))
@@ -69,6 +71,8 @@ dummy_process5 = Process(target=dummy_method, args=("foo","bar",))
 
 dummy_processes = [dummy_process1, dummy_process2, dummy_process3, dummy_process4, dummy_process5]
 print(dummy_processes)
+
 if __name__ == '__main__':
     freeze_support()
+    # check run_processes method works
     print(run_processes(dummy_processes))
