@@ -20,6 +20,9 @@ def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], pla
     return 
 
 # helper functions
+
+# chunk_plaintext takes the plaintext and chunk_count and returns an array of chunk_count # strings
+# if len(plaintext) / chunk_count != 0 (i.e. there is a remainder), the final chunk is equal to residue
 def chunk_plaintext(plaintext: str, chunk_count: int) -> str:
     chunk_len = len(plaintext) // chunk_count
     chunks = textwrap.wrap(plaintext, chunk_len)
