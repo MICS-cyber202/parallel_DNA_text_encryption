@@ -9,9 +9,10 @@
 # 3) run X Processes concurrently, making sure to time them
 # 4) write the resulting time to the CSV file, along with the arguments metadata
 
-from multiprocessing import Process 
+from multiprocessing import Process , freeze_support
 import os
 import textwrap
+import time
 from typing import Callable
 
 def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], plaintext: str, key: str, process_count: int) -> None:
@@ -45,11 +46,29 @@ def load_processes(encryption_algorithm: Callable[[str, str], str], plaintext_ch
 # figure out the best place to collect performance metrics and write them to the CSV
 # the function does not return anything 
 def run_processes(encryption_processes: list[Process]) -> None:
+    for i in range(0, len(encryption_processes)):
+        runnable = encryption_processes[i]
+        print(runnable)
+        runnable.start()
     return
 
 # print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
 
 def dummy_method(arg1: str, arg2: str) -> str:
+    time.sleep(3)
+    print("dummy")
     return "dummy"
 
-print(load_processes(dummy_method, ["aaa", "aaa", "aaa", "aaa", "aaa"], "abcde", 5))
+# print(load_processes(dummy_method, ["aaa", "aaa", "aaa", "aaa", "aaa"], "abcde", 5))
+
+dummy_process1 = Process(target=dummy_method, args=("foo","bar",))
+dummy_process2 = Process(target=dummy_method, args=("foo","bar",))
+dummy_process3 = Process(target=dummy_method, args=("foo","bar",))
+dummy_process4 = Process(target=dummy_method, args=("foo","bar",))
+dummy_process5 = Process(target=dummy_method, args=("foo","bar",))
+
+dummy_processes = [dummy_process1, dummy_process2, dummy_process3, dummy_process4, dummy_process5]
+print(dummy_processes)
+if __name__ == '__main__':
+    freeze_support()
+    print(run_processes(dummy_processes))
