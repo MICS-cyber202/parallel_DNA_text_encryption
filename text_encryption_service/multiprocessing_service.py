@@ -32,8 +32,20 @@ def chunk_plaintext(plaintext: str, chunk_count: int) -> str:
 
 # load_processes takes the encryption function, plaintext chunks, key, and process_count and returns an array of process_count # processes
 def load_processes(encryption_algorithm: Callable[[str, str], str], plaintext_chunks: list, key: str, process_count: int) -> list:
-    return 
+    # handle the edge case where the # of chunks is not equal to the number of desired processes
+    if len(plaintext_chunks) != process_count:
+        raise Exception("The number of chunks must be equal to specified number of processes")
+    
+    encryption_processes = []
+    for i in range(0, process_count):
+        encryption_processes.append(Process(target=encryption_algorithm, args=(plaintext_chunks[i], key,)))
+    return encryption_processes
 
 
 
-print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
+# print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
+
+def dummy_method(arg1: str, arg2: str) -> str:
+    return "dummy"
+
+print(load_processes(dummy_method, ["aaa", "aaa", "aaa", "aaa", "aaa"], "abcde", 5))
