@@ -7,19 +7,21 @@
 # 1) splice the plaintext into X equal chunks (mod X) and store them in an array of length X
 # 2) load X Process objects into an array with the target = encryption algorithm and the argument = the plaintext chunk
 # 3) run X Processes concurrently, making sure to time them
-# 4) write the resulting time to the CSV file, along with the arguments metadata
+# 4) write the performance metrics to the CSV file, along with the arguments metadata
 
 from multiprocessing import Process , freeze_support
 import os
 import textwrap
-import time
+from time import perf_counter_ns, sleep
 from typing import Callable
 
 def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], plaintext: str, key: str, process_count: int) -> None:
     # Step 1: splice the plaintext into equal chunks (mod process_count) and store in an array
     # Step 2: load X Process objects into an array with the target = encryption algorithm and the argument = the plaintext chunk and the key
-    # Step 3: run X Processes concurrently, making sure to time them
-    # Step 4: write the resulting time to the CSV file, along with the arguments metadata
+    # Step 3: start the performance timer
+    # Step 4: run X Processes concurrently
+    # Step 5: stop the performance timer
+    # Step 6: write the performance metrics to the CSV file, along with the arguments metadata
     return 
 
 # helper functions
@@ -60,7 +62,7 @@ def write_metrics_to_csv(metrics: list, file_path: str) -> None:
 # print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
 
 def dummy_method(arg1: str, arg2: str) -> str:
-    time.sleep(3)
+    sleep(3)
     print("dummy")
     return "dummy"
 
