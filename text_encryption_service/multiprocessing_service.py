@@ -2,6 +2,8 @@
 # - this service will be a HOF that takes as arguments the encryption algorithm, the plaintext, the key, & the X of processes to run
 # - the service should have a performance analysis function which times the total encryption time
 # - the service should have a logging function which writes the results to a CSV for further analysis
+# - the metrics should include: algorith_name, time_to_encrypt, process_count, 
+#
 # 
 # Steps:
 # 1) splice the plaintext into X equal chunks (mod X) and store them in an array of length X
@@ -9,6 +11,7 @@
 # 3) run X Processes concurrently, making sure to time them
 # 4) write the performance metrics to the CSV file, along with the arguments metadata
 
+import csv
 from multiprocessing import Process , freeze_support
 import os
 import textwrap
@@ -17,11 +20,23 @@ from typing import Callable
 
 def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], plaintext: str, key: str, process_count: int) -> None:
     # Step 1: splice the plaintext into equal chunks (mod process_count) and store in an array
+    plaintext_chunks = chunk_plaintext(plaintext, process_count)
+    print("plaintext chunks: ", plaintext_chunks)
     # Step 2: load X Process objects into an array with the target = encryption algorithm and the argument = the plaintext chunk and the key
+    encryption_processes = load_processes(encryption_algorithm, plaintext_chunks, dummy_key, process_count)
     # Step 3: start the performance timer
+    start_time = perf_counter_ns()
     # Step 4: run X Processes concurrently
+    run_processes(encryption_processes)
     # Step 5: stop the performance timer
+    end_time = perf_counter_ns()
     # Step 6: write the performance metrics to the CSV file, along with the arguments metadata
+    time_to_run=end_time-start_time
+    performance_metric_csvrow=["Tanmayi's Algorithm", process_count, time_to_run]
+    csv_file_path = "/Users/samuelberston/Documents/MICS/courses/CYBER202/Project/Parallel_Text_Encrpytion/performance_metrics.csv"
+    with open(csv_file_path, 'a', newline="\n") as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+        csvwriter.writerow(performance_metric_csvrow) 
     return 
 
 # helper functions
@@ -61,6 +76,10 @@ def write_metrics_to_csv(metrics: list, file_path: str) -> None:
 # check chunk_plaintext method works
 # print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
 
+
+dummy_plaintext = "dummyplaintextdummyplaintextdummyplaintext"
+dummy_key = "dummykey"
+
 def dummy_method(arg1: str, arg2: str) -> str:
     sleep(3)
     print("dummy")
@@ -76,9 +95,12 @@ dummy_process4 = Process(target=dummy_method, args=("foo","bar",))
 dummy_process5 = Process(target=dummy_method, args=("foo","bar",))
 
 dummy_processes = [dummy_process1, dummy_process2, dummy_process3, dummy_process4, dummy_process5]
+
 # print(dummy_processes)
 
 if __name__ == '__main__':
     freeze_support() # only needed if running on Windows
     # check run_processes method works
-    print(run_processes(dummy_processes))
+    # print(run_processes(dummy_processes))
+    for i in range(0, 100):
+        multiprocessing_service(dummy_method, dummy_plaintext, dummy_key, 6)
