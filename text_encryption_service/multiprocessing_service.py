@@ -20,8 +20,6 @@ def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], pla
 
 # helper functions
 def chunk_plaintext(plaintext: str, process_count: int) -> str:
-    chunks = [] * process_count
+    chunks = [''] * process_count
     print(chunks)
-    return    
-
-print(chunk_plaintext("abcdefgh", 8))    
+    return     
