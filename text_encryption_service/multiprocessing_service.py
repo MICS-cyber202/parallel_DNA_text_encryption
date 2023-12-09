@@ -43,7 +43,7 @@ def load_processes(encryption_algorithm: Callable[[str, str], str], plaintext_ch
     return encryption_processes
 
 # run_processes takes the loaded encryption_processes and runs them all concurrently
-# figure out the best place to collect performance metrics and write them to the CSV
+# to do - figure out the best place to collect performance metrics and write them to the CSV
 # the function does not return anything 
 def run_processes(encryption_processes: list[Process]) -> None:
     for i in range(0, len(encryption_processes)):
@@ -51,6 +51,10 @@ def run_processes(encryption_processes: list[Process]) -> None:
         print(runnable)
         runnable.start()
     return
+
+# write_metrics_to_csv takes a list of the metrics as csv and appends them to a csv file
+def write_metrics_to_csv(metrics: list, file_path: str) -> None:
+    return    
 
 # check chunk_plaintext method works
 # print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
@@ -70,9 +74,9 @@ dummy_process4 = Process(target=dummy_method, args=("foo","bar",))
 dummy_process5 = Process(target=dummy_method, args=("foo","bar",))
 
 dummy_processes = [dummy_process1, dummy_process2, dummy_process3, dummy_process4, dummy_process5]
-print(dummy_processes)
+# print(dummy_processes)
 
 if __name__ == '__main__':
-    freeze_support()
+    freeze_support() # only needed if running on Windows
     # check run_processes method works
     print(run_processes(dummy_processes))
