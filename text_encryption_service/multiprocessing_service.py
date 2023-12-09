@@ -34,10 +34,7 @@ def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], pla
     time_to_run=end_time-start_time
     performance_metric_csvrow=["Tanmayi's Algorithm", process_count, time_to_run]
     csv_file_path = "/Users/samuelberston/Documents/MICS/courses/CYBER202/Project/Parallel_Text_Encrpytion/performance_metrics.csv"
-    with open(csv_file_path, 'a', newline="\n") as csvfile:
-        csvwriter = csv.writer(csvfile, delimiter=",")
-        csvwriter.writerow(performance_metric_csvrow) 
-    return 
+    write_metrics_to_csv(performance_metric_csvrow, csv_file_path)
 
 # helper functions
 
@@ -70,7 +67,10 @@ def run_processes(encryption_processes: list[Process]) -> None:
     return
 
 # write_metrics_to_csv takes a list of the metrics as csv and appends them to a csv file
-def write_metrics_to_csv(metrics: list, file_path: str) -> None:
+def write_metrics_to_csv(metricsrow: list, csv_file_path: str) -> None:
+    with open(csv_file_path, 'a', newline="\n") as csvfile:
+        csvwriter = csv.writer(csvfile, delimiter=",")
+        csvwriter.writerow(metricsrow) 
     return    
 
 # check chunk_plaintext method works
