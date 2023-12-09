@@ -9,6 +9,8 @@
 # 3) run X Processes concurrently, making sure to time them
 # 4) write the resulting time to the CSV file, along with the arguments metadata
 
+from multiprocessing import Process 
+import os
 import textwrap
 from typing import Callable
 
@@ -27,5 +29,11 @@ def chunk_plaintext(plaintext: str, chunk_count: int) -> str:
     chunk_len = len(plaintext) // chunk_count
     chunks = textwrap.wrap(plaintext, chunk_len)
     return chunks
-    
+
+# load_processes takes the encryption function, plaintext chunks, key, and process_count and returns an array of process_count # processes
+def load_processes(encryption_algorithm: Callable[[str, str], str], plaintext_chunks: list, key: str, process_count: int) -> list:
+    return 
+
+
+
 print(chunk_plaintext("aaaaaasaaaaaaaaaaaaaaaaaaaaa", 5))    
