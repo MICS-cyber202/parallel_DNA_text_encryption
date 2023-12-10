@@ -118,5 +118,5 @@ if __name__ == '__main__':
     # print(run_processes(dummy_processes))
     for i in range(0, 10):
         print(os.cpu_count())
-        multiprocessing_service(text_cryptography_service.DNA_text_encryption, file_processor.plaintext_string ,text_cryptography_helpers.key, 8)
+        multiprocessing_service(text_cryptography_service.DNA_text_encryption, file_processor.plaintext_string ,text_cryptography_helpers.key, 10)
     # print(chunk_plaintext(file_processor.plaintext_string, 2))
