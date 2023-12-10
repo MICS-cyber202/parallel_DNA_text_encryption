@@ -1,162 +1,242 @@
-algorithm_name,process_count,time_to_run_ns
-Tanmayi's Algorithm,6,25522958
-Tanmayi's Algorithm,6,18018458
-Tanmayi's Algorithm,6,19239292
-Tanmayi's Algorithm,6,62445750
-Tanmayi's Algorithm,6,46375500
-Tanmayi's Algorithm,6,49404750
-Tanmayi's Algorithm,6,55665250
-Tanmayi's Algorithm,6,35506417
-Tanmayi's Algorithm,6,47107083
-Tanmayi's Algorithm,6,34604292
-Tanmayi's Algorithm,6,37126833
-Tanmayi's Algorithm,6,89223042
-Tanmayi's Algorithm,6,57781750
-Tanmayi's Algorithm,6,41690667
-Tanmayi's Algorithm,6,44681958
-Tanmayi's Algorithm,6,67676792
-Tanmayi's Algorithm,6,36922750
-Tanmayi's Algorithm,6,27742542
-Tanmayi's Algorithm,6,72329167
-Tanmayi's Algorithm,6,66494583
-Tanmayi's Algorithm,6,39429917
-Tanmayi's Algorithm,6,80081250
-Tanmayi's Algorithm,6,26215125
-Tanmayi's Algorithm,6,59981708
-Tanmayi's Algorithm,6,65318958
-Tanmayi's Algorithm,6,44616250
-Tanmayi's Algorithm,6,28530041
-Tanmayi's Algorithm,6,29563209
-Tanmayi's Algorithm,6,58745041
-Tanmayi's Algorithm,6,24521042
-Tanmayi's Algorithm,6,73310334
-Tanmayi's Algorithm,6,26040625
-Tanmayi's Algorithm,6,60075833
-Tanmayi's Algorithm,6,51504667
-Tanmayi's Algorithm,6,48147583
-Tanmayi's Algorithm,6,47720792
-Tanmayi's Algorithm,6,31793166
-Tanmayi's Algorithm,6,42381084
-Tanmayi's Algorithm,6,53001167
-Tanmayi's Algorithm,6,62170917
-Tanmayi's Algorithm,6,60339583
-Tanmayi's Algorithm,6,34240084
-Tanmayi's Algorithm,6,53956500
-Tanmayi's Algorithm,6,69173833
-Tanmayi's Algorithm,6,38581208
-Tanmayi's Algorithm,6,36856000
-Tanmayi's Algorithm,6,57083166
-Tanmayi's Algorithm,6,64863542
-Tanmayi's Algorithm,6,27219167
-Tanmayi's Algorithm,6,80114209
-Tanmayi's Algorithm,6,29315000
-Tanmayi's Algorithm,6,50580042
-Tanmayi's Algorithm,6,37254666
-Tanmayi's Algorithm,6,61247291
-Tanmayi's Algorithm,6,40525584
-Tanmayi's Algorithm,6,72091792
-Tanmayi's Algorithm,6,31838125
-Tanmayi's Algorithm,6,49178250
-Tanmayi's Algorithm,6,54783542
-Tanmayi's Algorithm,6,81414291
-Tanmayi's Algorithm,6,22940583
-Tanmayi's Algorithm,6,52045459
-Tanmayi's Algorithm,6,59687791
-Tanmayi's Algorithm,6,39398709
-Tanmayi's Algorithm,6,79970584
-Tanmayi's Algorithm,6,78754250
-Tanmayi's Algorithm,6,65779750
-Tanmayi's Algorithm,6,41604917
-Tanmayi's Algorithm,6,84937292
-Tanmayi's Algorithm,6,69791208
-Tanmayi's Algorithm,6,63336875
-Tanmayi's Algorithm,6,48211208
-Tanmayi's Algorithm,6,29117875
-Tanmayi's Algorithm,6,84061000
-Tanmayi's Algorithm,6,66155959
-Tanmayi's Algorithm,6,97814000
-Tanmayi's Algorithm,6,24314208
-Tanmayi's Algorithm,6,88408750
-Tanmayi's Algorithm,6,30877625
-Tanmayi's Algorithm,6,41190625
-Tanmayi's Algorithm,6,42052959
-Tanmayi's Algorithm,6,75200416
-Tanmayi's Algorithm,6,119322709
-Tanmayi's Algorithm,6,46790917
-Tanmayi's Algorithm,6,58000208
-Tanmayi's Algorithm,6,55973792
-Tanmayi's Algorithm,6,48593250
-Tanmayi's Algorithm,6,109694666
-Tanmayi's Algorithm,6,40700625
-Tanmayi's Algorithm,6,83609833
-Tanmayi's Algorithm,6,99385958
-Tanmayi's Algorithm,6,19864417
-Tanmayi's Algorithm,6,69898125
-Tanmayi's Algorithm,6,53936125
-Tanmayi's Algorithm,6,704504125
-Tanmayi's Algorithm,6,82755584
-Tanmayi's Algorithm,6,228091500
-Tanmayi's Algorithm,6,70134458
-Tanmayi's Algorithm,6,105218667
-Tanmayi's Algorithm,6,128681250
-Tanmayi's Algorithm,6,79737709
-Tanmayi's Algorithm,6,24440541
-Tanmayi's Algorithm,6,20762792
-Tanmayi's Algorithm,6,54012333
-Tanmayi's Algorithm,6,76411416
-Tanmayi's Algorithm,6,87372833
-Tanmayi's Algorithm,6,38072875
-Tanmayi's Algorithm,6,47181208
-Tanmayi's Algorithm,6,45845375
-Tanmayi's Algorithm,6,47946667
-Tanmayi's Algorithm,6,87772000
-Tanmayi's Algorithm,6,25364166
-Tanmayi's Algorithm,6,46131708
-Tanmayi's Algorithm,6,50446416
-Tanmayi's Algorithm,6,61639625
-Tanmayi's Algorithm,6,36250042
-Tanmayi's Algorithm,6,40257417
-Tanmayi's Algorithm,6,30820500
-Tanmayi's Algorithm,6,6346708
-Tanmayi's Algorithm,6,130169125
-Tanmayi's Algorithm,6,53889042
-Tanmayi's Algorithm,6,56308292
-Tanmayi's Algorithm,6,27474917
-Tanmayi's Algorithm,6,74109750
-Tanmayi's Algorithm,6,33925958
-Tanmayi's Algorithm,6,84863000
-Tanmayi's Algorithm,6,89522333
-Tanmayi's Algorithm,6,23355167
-Tanmayi's Algorithm,6,45187500
-Tanmayi's Algorithm,6,87093084
-Tanmayi's Algorithm,6,36465416
-Tanmayi's Algorithm,6,68114709
-Tanmayi's Algorithm,6,44466208
-Tanmayi's Algorithm,6,40633667
-Tanmayi's Algorithm,6,56774000
-Tanmayi's Algorithm,6,51480208
-Tanmayi's Algorithm,6,55893833
-Tanmayi's Algorithm,6,49874958
-Tanmayi's Algorithm,6,37228708
-Tanmayi's Algorithm,6,60924125
-Tanmayi's Algorithm,6,27344417
-Tanmayi's Algorithm,6,50355084
-Tanmayi's Algorithm,6,28059625
-Tanmayi's Algorithm,6,33592125
-Tanmayi's Algorithm,6,68990208
-Tanmayi's Algorithm,6,38927625
-Tanmayi's Algorithm,6,69671584
-Tanmayi's Algorithm,6,53975542
-Tanmayi's Algorithm,6,37341750
-Tanmayi's Algorithm,6,65155167
-Tanmayi's Algorithm,6,40433750
-Tanmayi's Algorithm,6,60631000
-Tanmayi's Algorithm,6,38002708
-Tanmayi's Algorithm,6,62180666
-Tanmayi's Algorithm,6,21791167
-Tanmayi's Algorithm,6,52121000
-Tanmayi's Algorithm,6,57160209
-Tanmayi's Algorithm,6,69825125
-Tanmayi's Algorithm,9,25016500
-Tanmayi's Algorithm,9,18992000
-Tanmayi's Algorithm,9,22746166
+algorithm_name, process_count, plaintext_length, time_to_run_ns
+
+text_encryption_algorithm,1,50,10176875
+text_encryption_algorithm,1,50,1326416
+text_encryption_algorithm,1,50,1268083
+text_encryption_algorithm,1,50,2482917
+text_encryption_algorithm,1,50,4278667
+text_encryption_algorithm,1,50,2741542
+text_encryption_algorithm,1,50,7764875
+text_encryption_algorithm,1,50,3326792
+text_encryption_algorithm,1,50,4049875
+text_encryption_algorithm,1,50,4966333
+text_encryption_algorithm,1,1000,8029833
+text_encryption_algorithm,1,1000,1537916
+text_encryption_algorithm,1,1000,968584
+text_encryption_algorithm,1,1000,1265208
+text_encryption_algorithm,1,1000,2091375
+text_encryption_algorithm,1,1000,3255500
+text_encryption_algorithm,1,1000,10783542
+text_encryption_algorithm,1,1000,1489167
+text_encryption_algorithm,1,1000,7496583
+text_encryption_algorithm,1,1000,6279750
+text_encryption_algorithm,1,2000,6017958
+text_encryption_algorithm,1,2000,1316458
+text_encryption_algorithm,1,2000,970750
+text_encryption_algorithm,1,2000,1645042
+text_encryption_algorithm,1,2000,1607916
+text_encryption_algorithm,1,2000,3196625
+text_encryption_algorithm,1,2000,3443875
+text_encryption_algorithm,1,2000,2981083
+text_encryption_algorithm,1,2000,5235375
+text_encryption_algorithm,1,2000,5218209
+text_encryption_algorithm,1,5000,5704792
+text_encryption_algorithm,1,5000,954375
+text_encryption_algorithm,1,5000,1135667
+text_encryption_algorithm,1,5000,2528750
+text_encryption_algorithm,1,5000,1900625
+text_encryption_algorithm,1,5000,6380875
+text_encryption_algorithm,1,5000,1536125
+text_encryption_algorithm,1,5000,4168334
+text_encryption_algorithm,1,5000,5685958
+text_encryption_algorithm,1,5000,1343417
+text_encryption_algorithm,1,10000,7656708
+text_encryption_algorithm,1,10000,872083
+text_encryption_algorithm,1,10000,1215125
+text_encryption_algorithm,1,10000,1141375
+text_encryption_algorithm,1,10000,4897625
+text_encryption_algorithm,1,10000,1969000
+text_encryption_algorithm,1,10000,2425875
+text_encryption_algorithm,1,10000,7514167
+text_encryption_algorithm,1,10000,2211542
+text_encryption_algorithm,1,10000,3404667
+text_encryption_algorithm,1,27854,7357542
+text_encryption_algorithm,1,27854,4553417
+text_encryption_algorithm,1,27854,1108125
+text_encryption_algorithm,1,27854,3286750
+text_encryption_algorithm,1,27854,2036584
+text_encryption_algorithm,1,27854,9130875
+text_encryption_algorithm,1,27854,3881250
+text_encryption_algorithm,1,27854,2764583
+text_encryption_algorithm,1,27854,3381750
+text_encryption_algorithm,1,27854,3026541
+text_encryption_algorithm,1,500,15915792
+text_encryption_algorithm,1,500,1400334
+text_encryption_algorithm,1,500,1860042
+text_encryption_algorithm,1,500,1770125
+text_encryption_algorithm,1,500,3847125
+text_encryption_algorithm,1,500,3259375
+text_encryption_algorithm,1,500,2811750
+text_encryption_algorithm,1,500,5154166
+text_encryption_algorithm,1,500,10978833
+text_encryption_algorithm,1,500,3776042
+text_encryption_algorithm,2,500,8559292
+text_encryption_algorithm,2,500,1994750
+text_encryption_algorithm,2,500,4297042
+text_encryption_algorithm,2,500,3008417
+text_encryption_algorithm,2,500,4366167
+text_encryption_algorithm,2,500,5380250
+text_encryption_algorithm,2,500,11249584
+text_encryption_algorithm,2,500,31930583
+text_encryption_algorithm,2,500,24418167
+text_encryption_algorithm,2,500,6722750
+text_encryption_algorithm,2,1000,15331375
+text_encryption_algorithm,2,1000,15239833
+text_encryption_algorithm,2,1000,3689083
+text_encryption_algorithm,2,1000,22498708
+text_encryption_algorithm,2,1000,12502083
+text_encryption_algorithm,2,1000,133787416
+text_encryption_algorithm,2,1000,6262542
+text_encryption_algorithm,2,1000,11713125
+text_encryption_algorithm,2,1000,6349833
+text_encryption_algorithm,2,1000,12520292
+text_encryption_algorithm,2,1950,19846833
+text_encryption_algorithm,2,1950,4365125
+text_encryption_algorithm,2,1950,5667583
+text_encryption_algorithm,2,1950,9357125
+text_encryption_algorithm,2,1950,7173542
+text_encryption_algorithm,2,1950,17045709
+text_encryption_algorithm,2,1950,34228000
+text_encryption_algorithm,2,1950,17933833
+text_encryption_algorithm,2,1950,17954459
+text_encryption_algorithm,2,1950,4140291
+text_encryption_algorithm,2,5000,9988041
+text_encryption_algorithm,2,5000,3576834
+text_encryption_algorithm,2,5000,3699459
+text_encryption_algorithm,2,5000,8923167
+text_encryption_algorithm,2,5000,9161333
+text_encryption_algorithm,2,5000,10370167
+text_encryption_algorithm,2,5000,18646375
+text_encryption_algorithm,2,5000,34745959
+text_encryption_algorithm,2,5000,4865708
+text_encryption_algorithm,2,5000,87634416
+text_encryption_algorithm,2,10000,10599792
+text_encryption_algorithm,2,10000,3968000
+text_encryption_algorithm,2,10000,16661791
+text_encryption_algorithm,2,10000,3868625
+text_encryption_algorithm,2,10000,5887167
+text_encryption_algorithm,2,10000,9021209
+text_encryption_algorithm,2,10000,6322375
+text_encryption_algorithm,2,10000,6763291
+text_encryption_algorithm,2,10000,21704000
+text_encryption_algorithm,2,10000,9056917
+text_encryption_algorithm,2,27854,7221833
+text_encryption_algorithm,2,27854,3588916
+text_encryption_algorithm,2,27854,1943416
+text_encryption_algorithm,2,27854,9778167
+text_encryption_algorithm,2,27854,19609666
+text_encryption_algorithm,2,27854,5875917
+text_encryption_algorithm,2,27854,6022791
+text_encryption_algorithm,2,27854,30219333
+text_encryption_algorithm,2,27854,4730625
+text_encryption_algorithm,2,27854,5446792
+text_encryption_algorithm,5,500,13103250
+text_encryption_algorithm,5,500,19429667
+text_encryption_algorithm,5,500,46201500
+text_encryption_algorithm,5,500,35676458
+text_encryption_algorithm,5,500,32655875
+text_encryption_algorithm,5,500,57557250
+text_encryption_algorithm,5,500,93153875
+text_encryption_algorithm,5,500,81196084
+text_encryption_algorithm,5,500,92545375
+text_encryption_algorithm,5,500,46274834
+text_encryption_algorithm,5,1000,10057084
+text_encryption_algorithm,5,1000,14119667
+text_encryption_algorithm,5,1000,42378042
+text_encryption_algorithm,5,1000,65619375
+text_encryption_algorithm,5,1000,43112167
+text_encryption_algorithm,5,1000,154364750
+text_encryption_algorithm,5,1000,33254417
+text_encryption_algorithm,5,1000,32723667
+text_encryption_algorithm,5,1000,58408834
+text_encryption_algorithm,5,1000,61326459
+text_encryption_algorithm,5,2000,10675333
+text_encryption_algorithm,5,2000,9232625
+text_encryption_algorithm,5,2000,7473708
+text_encryption_algorithm,5,2000,52232167
+text_encryption_algorithm,5,2000,50047458
+text_encryption_algorithm,5,2000,46733041
+text_encryption_algorithm,5,2000,33987666
+text_encryption_algorithm,5,2000,82890334
+text_encryption_algorithm,5,2000,9541334
+text_encryption_algorithm,5,2000,210598334
+text_encryption_algorithm,5,5000,11443291
+text_encryption_algorithm,5,5000,18547584
+text_encryption_algorithm,5,5000,45119333
+text_encryption_algorithm,5,5000,31748334
+text_encryption_algorithm,5,5000,46430292
+text_encryption_algorithm,5,5000,12675333
+text_encryption_algorithm,5,5000,143295875
+text_encryption_algorithm,5,5000,72743209
+text_encryption_algorithm,5,5000,57692042
+text_encryption_algorithm,5,5000,16832541
+text_encryption_algorithm,5,10000,10180875
+text_encryption_algorithm,5,10000,23736334
+text_encryption_algorithm,5,10000,59409875
+text_encryption_algorithm,5,10000,44858958
+text_encryption_algorithm,5,10000,27152750
+text_encryption_algorithm,5,10000,6857292
+text_encryption_algorithm,5,10000,55259750
+text_encryption_algorithm,5,10000,13733500
+text_encryption_algorithm,5,10000,35249959
+text_encryption_algorithm,5,10000,79934583
+text_encryption_algorithm,8,500,32943833
+text_encryption_algorithm,8,500,39688959
+text_encryption_algorithm,8,500,51761000
+text_encryption_algorithm,8,500,100727250
+text_encryption_algorithm,8,500,137788875
+text_encryption_algorithm,8,500,97876542
+text_encryption_algorithm,8,500,217553666
+text_encryption_algorithm,8,500,159450500
+text_encryption_algorithm,8,500,61879125
+text_encryption_algorithm,8,500,55402958
+text_encryption_algorithm,8,1000,18663292
+text_encryption_algorithm,8,1000,66577750
+text_encryption_algorithm,8,1000,168544000
+text_encryption_algorithm,8,1000,38556292
+text_encryption_algorithm,8,1000,53458291
+text_encryption_algorithm,8,1000,150155250
+text_encryption_algorithm,8,1000,182865083
+text_encryption_algorithm,8,1000,144074750
+text_encryption_algorithm,8,1000,119847167
+text_encryption_algorithm,8,1000,97831000
+text_encryption_algorithm,8,2000,21961833
+text_encryption_algorithm,8,2000,54532416
+text_encryption_algorithm,8,2000,73530417
+text_encryption_algorithm,8,2000,105569583
+text_encryption_algorithm,8,2000,166141958
+text_encryption_algorithm,8,2000,117816500
+text_encryption_algorithm,8,2000,81539250
+text_encryption_algorithm,8,2000,32126083
+text_encryption_algorithm,8,2000,137376667
+text_encryption_algorithm,8,2000,136290292
+text_encryption_algorithm,8,5000,15292459
+text_encryption_algorithm,8,5000,46634375
+text_encryption_algorithm,8,5000,87587833
+text_encryption_algorithm,8,5000,41774583
+text_encryption_algorithm,8,5000,29198833
+text_encryption_algorithm,8,5000,162489625
+text_encryption_algorithm,8,5000,127609125
+text_encryption_algorithm,8,5000,21135625
+text_encryption_algorithm,8,5000,291741250
+text_encryption_algorithm,8,5000,74838083
+text_encryption_algorithm,8,10000,20160583
+text_encryption_algorithm,8,10000,34931166
+text_encryption_algorithm,8,10000,42610500
+text_encryption_algorithm,8,10000,107859000
+text_encryption_algorithm,8,10000,18389500
+text_encryption_algorithm,8,10000,107298666
+text_encryption_algorithm,8,10000,16703333
+text_encryption_algorithm,8,10000,178599208
+text_encryption_algorithm,8,10000,114781375
+text_encryption_algorithm,8,10000,76293375
+text_encryption_algorithm,8,27854,25564125
+text_encryption_algorithm,8,27854,39184500
+text_encryption_algorithm,8,27854,89232583
+text_encryption_algorithm,8,27854,137919709
+text_encryption_algorithm,8,27854,101895250
+text_encryption_algorithm,8,27854,33391125
+text_encryption_algorithm,8,27854,67900250
+text_encryption_algorithm,8,27854,30012250
+text_encryption_algorithm,8,27854,23858625
+text_encryption_algorithm,8,27854,54616500

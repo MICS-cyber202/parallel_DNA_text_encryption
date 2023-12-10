@@ -18,12 +18,20 @@ import textwrap
 from time import perf_counter_ns, sleep
 from typing import Callable
 
+import varoon_implB
+import text_cryptography_service
+import text_cryptography_helpers
+import file_processor
+
 def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], plaintext: str, key: str, process_count: int) -> None:
+   
+    plaintext = plaintext
     # Step 1: splice the plaintext into equal chunks (mod process_count) and store in an array
     plaintext_chunks = chunk_plaintext(plaintext, process_count)
+    plaintext_chunks = plaintext_chunks[:process_count]
     print("plaintext chunks: ", plaintext_chunks)
     # Step 2: load X Process objects into an array with the target = encryption algorithm and the argument = the plaintext chunk and the key
-    encryption_processes = load_processes(encryption_algorithm, plaintext_chunks, dummy_key, process_count)
+    encryption_processes = load_processes(encryption_algorithm, plaintext_chunks, key, process_count)
     # Step 3: start the performance timer
     start_time = perf_counter_ns()
     # Step 4: run X Processes concurrently
@@ -32,8 +40,9 @@ def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], pla
     end_time = perf_counter_ns()
     # Step 6: write the performance metrics to the CSV file, along with the arguments metadata
     time_to_run=end_time-start_time
-    performance_metric_csvrow=["Tanmayi's Algorithm", process_count, time_to_run]
+    performance_metric_csvrow=["text_encryption_algorithm", process_count, len(plaintext), time_to_run]
     csv_file_path = "/Users/samuelberston/Documents/MICS/courses/CYBER202/Project/Parallel_Text_Encrpytion/performance_metrics.csv"
+    print("csvrow: ", performance_metric_csvrow)
     write_metrics_to_csv(performance_metric_csvrow, csv_file_path)
 
 # helper functions
@@ -42,9 +51,13 @@ def multiprocessing_service(encryption_algorithm: Callable[[str, str], str], pla
 # chunk_plaintext takes the plaintext and chunk_count and returns an array of chunk_count # strings
 # if len(plaintext) / chunk_count != 0 (i.e. there is a remainder), the final chunk is equal to residue
 def chunk_plaintext(plaintext: str, chunk_count: int) -> str:
-    chunk_len = len(plaintext) // (chunk_count - 1)
+    chunk_len = len(plaintext) // chunk_count
+    print("len", chunk_len)
+    # mod = len(plaintext) % chunk_len
+    # plaintext=plaintext[:len(plaintext) - mod]
+    # print(plaintext)
     chunks = textwrap.wrap(plaintext, chunk_len)
-    return chunks
+    return chunks[:chunk_count]
 
 # load_processes takes the encryption function, plaintext chunks, key, and process_count and returns an array of process_count # processes
 def load_processes(encryption_algorithm: Callable[[str, str], str], plaintext_chunks: list, key: str, process_count: int) -> list:
@@ -103,6 +116,7 @@ if __name__ == '__main__':
     freeze_support() # only needed if running on Windows
     # check run_processes method works
     # print(run_processes(dummy_processes))
-    # for i in range(0, 100):
-    print(os.cpu_count())
-    multiprocessing_service(dummy_method, dummy_plaintext, dummy_key, 9)
+    for i in range(0, 10):
+        print(os.cpu_count())
+        multiprocessing_service(text_cryptography_service.DNA_text_encryption, file_processor.plaintext_string ,text_cryptography_helpers.key, 8)
+    # print(chunk_plaintext(file_processor.plaintext_string, 2))

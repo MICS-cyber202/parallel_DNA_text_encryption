@@ -1,6 +1,5 @@
 import text_cryptography_helpers
 
-
 # STEP 2
 # P is converted to ASCII code and then to its corresponding 8-bit binary value PB.
 def convert_plaintext_to_8bit(plaintext) -> str: 
@@ -28,6 +27,7 @@ def convert_plaintext_to_8bit(plaintext) -> str:
 # sited in Table 2 and named as DB.
 
 def generate_DNA_sequence_from_key(key) -> str:
+    print('key: ', key)
     Db = ''
     for letter in key:
         Db+= text_cryptography_helpers.dna_dict[letter]

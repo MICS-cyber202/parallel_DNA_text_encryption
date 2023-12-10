@@ -8,6 +8,7 @@ Description: The text encryption service
 from threading import Thread
 import text_cryptography_helpers
 import text_encryption_functions
+import text_decryption_functions
 import file_processor
 
 # get the transcript file loaded as a string
@@ -35,14 +36,22 @@ def DNA_text_encryption(plaintext: str, key: str) -> tuple[str, str]:
     print('KE: ', KE)
     return [R, KE]
 
+def DNA_text_decryption(KE) -> str:
+    K = text_decryption_functions.get_decimal_values(KE)
+    R, D = text_decryption_functions.step5(K)
+    Db = text_decryption_functions.step6(D)
+    Pb = text_decryption_functions.step7(R, Db)
+    plaintext = text_decryption_functions.step8(R, Pb)
+    return plaintext
+
 
 print(len(file_processor.plaintext_string))
 part1_of_3 = file_processor.plaintext_string[:len(file_processor.plaintext_string) // 3]
 part2_of_3 = file_processor.plaintext_string[len(file_processor.plaintext_string) // 3:(2 * len(file_processor.plaintext_string) // 3)]
 part3_of_3 = file_processor.plaintext_string[(2 * len(file_processor.plaintext_string) // 3):]
-# print(part1_of_3)
-# print(part2_of_3)
-# print(part3_of_3)
+print(part1_of_3)
+print(part2_of_3)
+print(part3_of_3)
 # 27854 / 5 = 5570 mod 4
 
 # res = DNA_text_encryption(file_processor.plaintext_string, text_cryptography_helpers.key)   
@@ -52,10 +61,10 @@ part3_of_3 = file_processor.plaintext_string[(2 * len(file_processor.plaintext_s
 # to do: 
 # - decryption
 
-t1 = Thread(target=DNA_text_encryption, args=[part1_of_3, text_cryptography_helpers.key])
-t2 = Thread(target=DNA_text_encryption, args=[part2_of_3, text_cryptography_helpers.key])
-t3 = Thread(target=DNA_text_encryption, args=[part3_of_3, text_cryptography_helpers.key])
+# t1 = Thread(target=DNA_text_encryption, args=[part1_of_3, text_cryptography_helpers.key])
+# t2 = Thread(target=DNA_text_encryption, args=[part2_of_3, text_cryptography_helpers.key])
+# t3 = Thread(target=DNA_text_encryption, args=[part3_of_3, text_cryptography_helpers.key])
 
-t1.start()
-t2.start()
-t3.start()
+# t1.start()
+# t2.start()
+# t3.start()
